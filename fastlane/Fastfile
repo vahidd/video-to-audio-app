@@ -1,0 +1,15 @@
+import ENV["SHARED_FASTLANE_PATH"]
+
+default_platform(:ios)
+
+platform :ios do
+  desc "VideoToAudio iOS release build"
+  lane :build_release do
+    build_and_upload_shared(
+      development_team: ENV["DEVELOPMENT_TEAM"],
+      app_identifier: "org.codewiz.video2audio",
+      scheme: "VideoToAudio",
+      workspace: "ios/VideoToAudio.xcworkspace"
+    )
+  end
+end
