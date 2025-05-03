@@ -1,0 +1,16 @@
+{
+  "name": "VideoToAudio",
+  "displayName": "VideoToAudio",
+  "expo": {
+    "plugins": [
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "video-to-audio",
+          "organization": "codewiz"
+        }
+      ]
+    ]
+  }
+}
